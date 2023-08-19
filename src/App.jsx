@@ -32,6 +32,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <p>Helloooo</p>
+      <p>Just your friendly neighborhood Antman</p>
     </>
   )
 }
