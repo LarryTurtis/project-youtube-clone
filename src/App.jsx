@@ -7,9 +7,12 @@ import ut from "./assets/youtube-logo-png-transparent-image-5.png"
 function App() {
   const [count, setCount] = useState(0)
 
+ console.log(`This is the API Key ${import.meta.env.VITE_YT_API_KEY}`)
+
   return (
     <>
-    <h1> Hello Gang</h1>
+      <h1> Hello Gang</h1>
+      Yo Yaow - Its Kavon!
       <div>
         <a href="https://youtu.be/ope1743gdAw" target="_blank">
           <img src={ut} className="logo" alt="YouTube logo" />
