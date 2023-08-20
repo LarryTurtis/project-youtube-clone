@@ -9,19 +9,19 @@ import SearchBar from './components/SearchBar'
 function App() {
   const [count, setCount] = useState(0)
 
- console.log(`This is the API Key ${import.meta.env.VITE_YT_API_KEY}`)
+  console.log(`This is the API Key ${import.meta.env.VITE_YT_API_KEY}`)
 
   return (
 
     <>
 
 
-    <header>
-    <HomeNavBar />
-    </header>
+      <header>
+        <HomeNavBar />
+      </header>
 
-    <SearchBar/>
-    <h1> Hello Gang</h1>
+      <SearchBar />
+      <h1> Hello Gang</h1>
 
 
       <div>
@@ -37,20 +37,9 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
 
-      <p>Hello</p>
-    
-  
 
-      <p>Helloooo</p>
-      <p>Just your friendly neighborhood Antman</p>
     </>
 
   )
