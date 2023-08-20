@@ -24,6 +24,13 @@
   filter: drop-shadow(0 0 2em #69ff7faa);
 }
 
+.searchBarArea {
+  padding: 22px;
+}
+
+.searchBarArea-btn {
+  background: red;
+}
 
 
 @media (prefers-reduced-motion: no-preference) {

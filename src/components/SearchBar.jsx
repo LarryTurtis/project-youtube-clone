@@ -1,23 +1,25 @@
 import { useState } from "react";
 
 
-function SearchBar (){
+function SearchBar() {
 
-const [searchValue, setSearchValue] = useState("")
+    const [searchValue, setSearchValue] = useState("")
 
 
-return (
-    <>
-    <input
-    type="text"
-    value={searchValue}
-    onChange={(e) => setSearchValue(e.target.value)}
-    />
-    <button> 
-        Search
-    </button>
+    return (
+        <>
+            <div className="searchBarArea">
+                <input
+                    type="text"
+                    value={searchValue}
+                    onChange={(e) => setSearchValue(e.target.value)}
+                />
+                <button className="searchBarArea-btn">
+                    Search
+                </button>
+            </div>
         </>
-)
+    )
 }
 
 

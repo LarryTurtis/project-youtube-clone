@@ -21,7 +21,7 @@ function HomeNavBar() {
         <div className="nav-links">
           <div className="nav-link">
             <a href="/" onClick={handleLogoClick}>
-              YouTube
+              <h3>YouTube</h3>
             </a>
           </div>
           <div className="nav-link">
