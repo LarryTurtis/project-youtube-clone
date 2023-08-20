@@ -1,8 +1,10 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  /* 
+  max-width: 1280px;
+  padding: 2rem;
+   */
 }
 
 .logo {
@@ -22,14 +24,7 @@
   filter: drop-shadow(0 0 2em #69ff7faa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
@@ -37,10 +32,6 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
+
+

@@ -21,7 +21,6 @@ function App() {
       </header>
 
       <SearchBar />
-      <h1> Hello Gang</h1>
 
 
       <div>
