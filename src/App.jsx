@@ -9,9 +9,12 @@ import SearchBar from './components/SearchBar'
 function App() {
   const [count, setCount] = useState(0)
 
+ console.log(`This is the API Key ${import.meta.env.VITE_YT_API_KEY}`)
+
   return (
 
     <>
+
 
     <header>
     <HomeNavBar />
@@ -19,6 +22,8 @@ function App() {
 
     <SearchBar/>
     <h1> Hello Gang</h1>
+
+
       <div>
         <a href="https://youtu.be/ope1743gdAw" target="_blank">
           <img src={ut} className="logo" alt="YouTube logo" />
@@ -39,9 +44,15 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
       <p>Hello</p>
     
   </>
+
+      <p>Helloooo</p>
+      <p>Just your friendly neighborhood Antman</p>
+    </>
+
   )
 }
 
