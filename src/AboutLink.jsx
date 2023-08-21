@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeNavBar.css"
+import "./HomeNavBar.jsx"
 import AboutLink from './AboutLink';
 
 
