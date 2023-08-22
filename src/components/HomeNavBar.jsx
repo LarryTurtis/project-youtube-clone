@@ -1,38 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './HomeNavBar.css';
 
 function HomeNavBar() {
-  const handleLogoClick = () => {
-    // Do something on logo click
-  };
-
-  const handleHomeClick = () => {
-    // Do something on home click
-  };
-
-  const handleAboutClick = () => {
-    // Do something on about click
-  };
-
   return (
     <header>
       <nav className='navBar'>
         <div className="nav-links">
           <div className="nav-link">
-            <a href="/" onClick={handleLogoClick}>
+            <Link to="/">
               <h3>YouTube</h3>
-            </a>
+            </Link>
           </div>
           <div className="nav-link">
-            <a href="/" onClick={handleHomeClick}>
+            <Link to="/">
               Home
-            </a>
+            </Link>
           </div>
           <div className="nav-link">
-            <a href="/" onClick={handleAboutClick}>
+            <Link to="/about">
               About
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

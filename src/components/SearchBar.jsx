@@ -1,29 +1,26 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 
+function SearchBar({ onSearch }) {
+  const [searchTerm, setSearchTerm] = useState('');
 
-function SearchBar() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    onSearch(searchTerm); // Pass the search term to the parent component
+  };
 
-    const [searchValue, setSearchValue] = useState("")
-
-
-    return (
-        <>
-            <div className="searchBarArea">
-                <input
-                    type="text"
-                    value={searchValue}
-                    onChange={(e) => setSearchValue(e.target.value)}
-                />
-                <button className="searchBarArea-btn">
-                    Search
-                </button>
-            </div>
-        </>
-    )
+  return (
+    <div className="search-bar">
+      <form onSubmit={handleSubmit}>
+        <input className='searchBarArea'
+          type="text"
+          placeholder="Search for videos"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <button className='searchBarArea-btn' type="submit">Search</button>
+      </form>
+    </div>
+  );
 }
 
-
-
-
-
-export default SearchBar
+export default SearchBar;
